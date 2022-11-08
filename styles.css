@@ -1,101 +1,246 @@
-.inline-block {
-	display:  inline-block;
-}
-
-.inline {
-	display: inline;
-}
-
 .block {
 	display: block;
 }
 
-.float-right {
-	float: right;
+.inline-block {
+	display: inline-block;
+}
+
+.content-wrapper {
+
+}
+
+html {
+	font-size: 16pt;
+	color: #BDBDBD;
 }
 
 body{
 	margin: 0;
 	font-family: 'Trillium Web', sans-serif;
-	background-color: #BDBDBD;
-	font-size: 16pt;
-}
-
-// Navigation Section
-
-header {
-	height: 5vh;
-	max-height: 65px;
-	width: 100%;
 	background-color: #003B6D;
 }
 
+
+
+
+header {
+	background-color: #6699CC;
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	width: 100%;
+	height: 55px;
+}
+
 #header-image {
-	height: 5vh;
-	max-height: 61px;
-	float: left;
-	margin: 2px 5px 2px 1vw;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 51px;
+	margin: 2px 2px 2px 5px;
 }
 
 nav {
-	width: 10%;
-	text-align: center;
-	margin: 0;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: calc(100% - 58px);
+	min-width: 345px;
+	height: 100%;
+	text-align: left;
+
 }
 
 .nav-item {
-	padding: 0 1vw 0 1vw;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	margin: 0 1.5vw 0 1.5vw;
 }
 
-.nav-item>a {
-	color: #BDBDBD;
+a {
+	color: #F0F0F0;
+}
+
+a:visited {
+	color: #676767;
+}
+
+.nav-item a {
+	color: #F0F0F0;
 	text-decoration: none;
-	margin: auto;
 }
 
 a.active {
-	border-bottom: 2px solid #BDBDBD;
+	padding: 0 3px 3px 3px;
+	color: #FFFFFF;
+	border-bottom: 2px solid #FFFFFF;
+	font-weight: bold;
+}
+
+#contact-button {
+	position: absolute;
+	right: 0;
 }
 
 
-// Main Content Section
 
 
 #main {
-	margin: 0;
+	position: relative;
+	margin-top: 55px;
+	padding-bottom: 5px;
 }
 
-/*
-.main-section {
-	display: block;
-	margin:  2% 5% 2% 5%;
-	height: 33vh;
+.content-wrapper {
+	
 }
+
+.title-wrap {
+	text-align: center;
+	margin: 0 8vw 0 8vw;
+	border-bottom: 4px solid ;
+}
+
+h2 {
+	margin: 0;
+	padding-bottom: 15px;
+}
+
+
+.main-section {
+	font-size: 1.5em;
+	margin: 5vh 15vw 5vh 15vw;
+	padding: 5px;
+}
+
 
 #hero-section {
 	margin: 0;
-	height: 60vh;
-	//text-align: center;
+	padding: 0;
+	position: relative;
+	background-image: url(imgs/lick_bw.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+
+#hero-statement {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 70vw;
+	color: #F0F0F0;
+	text-align: center;
+	font-size: 2.5rem;
+}
+
+#contact-form {
+	margin: 5vh 10vw 5vh 10vw;
 	position: relative;
 }
 
-#mission-img {
-	height: 60vh;
-	width: auto;
-	margin-right: 5vw;
-	position: absolute;
-	left: 0;
+.content-wrapper ul {
+	margin-bottom: 0;
 }
 
-#mission-statement {
-	position: absolute;
-	top: 50%;
-	left: 30%;
-	transform: translateY(-50%);
-	font-size: 5vw;
+.content-wrapper li {
+	line-height: 1.5em;
 }
 
-.content-header {
-	display: block;
+.content-wrapper li>a {
+	margin-left: 4vw;
 }
-*/
+
+form {
+	margin: 1em 0 1em;
+	width: 100%;
+}
+
+form>div {
+	margin: 1em 0 1em;
+}
+
+form>div:last-child {
+	margin: 2em 0 1em;
+}
+
+#form-wrap {
+	margin: 1em 0 1em;
+	padding: 1em 5vw 1em 5vw;
+	background-color: #0D2F4C;
+	border-radius: 0.25em;
+}
+
+label {
+	font-weight: bold;
+}
+
+input[type=email], [type=text], select {
+	width: 100%;
+	height: 1.6rem;
+	box-sizing: border-box;
+	padding: 0.5em;
+	border-radius: 0.25em;
+	border: none;
+	background-color: #6699CC;
+	color: #F0F0F0;
+	font-size: 0.8rem;
+}
+
+input[type=submit] {
+  width: 100%;
+  height: 1.6rem;
+  padding: 0.5em;
+  border-radius: 0.25em;
+  background-color: #6699CC;
+  color: #F0F0F0;
+  border: none;
+  cursor: pointer;
+}
+
+::placeholder {
+	color: #EAEAEA;
+}
+
+.page-title-wrap {
+	border: none;
+	color: #F0F0F0;
+	text-align: center;
+}
+
+@media only screen and (max-width: 450px) {
+	html{
+		font-size: 8pt;
+	}
+
+	.nav-item {
+		font-size: 1.3rem;
+	}
+
+	#contact-button {
+		position: relative;
+	}
+
+	.main-section {
+		margin: 3vh 7vw 3vh 7vw;
+	/*	padding: 5px; */
+	}
+
+	#contact-form {
+		margin: 3vh 7vw 3vh 7vw;
+	}
+
+	input[type=email], [type=text], select {
+		height: 3rem;
+		font-size: 1.3rem;
+	}
+
+	input[type=submit] {
+		height: 3rem;
+		font-size: 1.3rem;
+	}
+} 
