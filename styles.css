@@ -1,0 +1,101 @@
+.inline-block {
+	display:  inline-block;
+}
+
+.inline {
+	display: inline;
+}
+
+.block {
+	display: block;
+}
+
+.float-right {
+	float: right;
+}
+
+body{
+	margin: 0;
+	font-family: 'Trillium Web', sans-serif;
+	background-color: #BDBDBD;
+	font-size: 16pt;
+}
+
+// Navigation Section
+
+header {
+	height: 5vh;
+	max-height: 65px;
+	width: 100%;
+	background-color: #003B6D;
+}
+
+#header-image {
+	height: 5vh;
+	max-height: 61px;
+	float: left;
+	margin: 2px 5px 2px 1vw;
+}
+
+nav {
+	width: 10%;
+	text-align: center;
+	margin: 0;
+}
+
+.nav-item {
+	padding: 0 1vw 0 1vw;
+}
+
+.nav-item>a {
+	color: #BDBDBD;
+	text-decoration: none;
+	margin: auto;
+}
+
+a.active {
+	border-bottom: 2px solid #BDBDBD;
+}
+
+
+// Main Content Section
+
+
+#main {
+	margin: 0;
+}
+
+/*
+.main-section {
+	display: block;
+	margin:  2% 5% 2% 5%;
+	height: 33vh;
+}
+
+#hero-section {
+	margin: 0;
+	height: 60vh;
+	//text-align: center;
+	position: relative;
+}
+
+#mission-img {
+	height: 60vh;
+	width: auto;
+	margin-right: 5vw;
+	position: absolute;
+	left: 0;
+}
+
+#mission-statement {
+	position: absolute;
+	top: 50%;
+	left: 30%;
+	transform: translateY(-50%);
+	font-size: 5vw;
+}
+
+.content-header {
+	display: block;
+}
+*/
